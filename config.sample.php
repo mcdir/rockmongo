@@ -5,7 +5,7 @@
  * Defining default options and server configuration
  * @package rockmongo
  */
- 
+
 $MONGO = array();
 $MONGO["features"]["log_query"] = "on";//log queries
 $MONGO["features"]["theme"] = "default";//theme
@@ -14,10 +14,10 @@ $MONGO["features"]["plugins"] = "on";//plugins
 $i = 0;
 
 /**
-* Configuration of MongoDB servers
-* 
-* @see more details at http://rockmongo.com/wiki/configuration?lang=en_us
-*/
+ * Configuration of MongoDB servers
+ *
+ * @see more details at http://rockmongo.com/wiki/configuration?lang=en_us
+ */
 $MONGO["servers"][$i]["mongo_name"] = "Localhost";//mongo server name
 //$MONGO["servers"][$i]["mongo_sock"] = "/var/run/mongo.sock";//mongo socket path (instead of host and port)
 $MONGO["servers"][$i]["mongo_host"] = "127.0.0.1";//mongo host
@@ -39,17 +39,17 @@ $MONGO["servers"][$i]["ui_hide_system_collections"] = false;//whether hide the s
 //$MONGO["servers"][$i]["docs_nature_order"] = false;//whether show documents by nature order, default is by _id field
 //$MONGO["servers"][$i]["docs_render"] = "default";//document highlight render, can be "default" or "plain"
 
-$i ++;
+$i++;
 
 /**
  * mini configuration for another mongo server
  */
 /**
-$MONGO["servers"][$i]["mongo_name"] = "Localhost2";
-$MONGO["servers"][$i]["mongo_host"] = "127.0.0.1";
-$MONGO["servers"][$i]["mongo_port"] = "27017";
-$MONGO["servers"][$i]["control_users"]["admin"] = "password";
-$i ++;
-**/
+ * $MONGO["servers"][$i]["mongo_name"] = "Localhost2";
+ * $MONGO["servers"][$i]["mongo_host"] = "127.0.0.1";
+ * $MONGO["servers"][$i]["mongo_port"] = "27017";
+ * $MONGO["servers"][$i]["control_users"]["admin"] = "password";
+ * $i ++;
+ **/
 
 ?>
